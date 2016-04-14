@@ -48,4 +48,7 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
   Complete 16b Services = 00a0
   Complete Local Name = Button
 ```
-
+Display your BLE devices name by running
+* python getDeviceName.py xx:xx:xx:xx:xx:xx 
+   *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
+      * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
