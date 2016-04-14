@@ -30,6 +30,8 @@ Downloaing the the bluepy example files
 File information
 ----------------
 blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)
+
+
 Using the bluepy examples
 -------------------------
 Change the dictory to the one width the example files
@@ -37,28 +39,11 @@ Change the dictory to the one width the example files
 Start by discover your BLE devices by running
 * sudo python blesca.py
 
-Expected output:
+Expected output when the nRF51-dk is programmed using the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
 ```text
-Device 08:df:1f:c4:30:69 (public), RSSI=-98 dB
-  Flags = 12
-  Complete 16b Services = befe
-  Manufacturer = 0033400a0100
-Device c7:db:9e:41:3f:c8 (random), RSSI=-97 dB
-  Flags = 06
-  Complete 16b Services = edfe
-Device 46:10:30:d8:24:8e (random), RSSI=-101 dB
-  Flags = 1a
-Device 00:22:d0:34:d1:e9 (public), RSSI=-97 dB
-  Complete Local Name = Polar Loop 34D1E91B
-  Flags = 05
-Device 7a:bd:a3:c2:cb:e3 (random), RSSI=-101 dB
-  Flags = 1a
 Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
   Flags = 06
   Complete 16b Services = 00a0
   Complete Local Name = Button
-Device 61:dc:cf:ee:64:08 (random), RSSI=-98 dB
-  Flags = 1a
-  Manufacturer = 4c000100002000000000000000000000000000
 ```
 
