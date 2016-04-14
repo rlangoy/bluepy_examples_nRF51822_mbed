@@ -15,9 +15,9 @@ bluepy Installation
 On Raspberry pi3 (or other raspberryes width BLE usb dongle) running the "Raspbian Jessie" image
 * run cat /etc/os-release to display your version :smiley:
 
-Install [BlueZ] (http://www.bluez.org) (The Official Linux Bluetooth protocol stack)
+Install [BlueZ] (http://www.bluez.org)  - The Official Linux Bluetooth protocol stack
 * sudo apt-get install bluez
 
-Install [bluepy] (http://ianharvey.github.io/bluepy-doc) Python interface to Bluetooth LE on Linux
+Install [bluepy] (http://ianharvey.github.io/bluepy-doc) - Python interface to Bluetooth LE on Linux
 * sudo apt-get install python-pip libglib2.0-dev
 * sudo pip install bluepy
