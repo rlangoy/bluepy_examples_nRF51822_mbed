@@ -12,7 +12,7 @@ The used templates is:  <br>
 
 bluepy Installation on Raspberry pi3 
 ------------------------------------
-Other raspberryes or PC's width a BLE usb dongle running the Debian "Jessie" image might work :smiley:<br>
+Other raspberryes or PC's width a BLE usb dongle running the Debian "Jessie" image might work :smiley:<br><br>
 Check the curent linux distro. 
 * cat /etc/os-release  
 
