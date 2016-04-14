@@ -51,7 +51,7 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
 Display your BLE devices name by running
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
    *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
-      * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
+      * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: <br>
 Expected output is:
 ```text
 nRF5x
