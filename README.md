@@ -1,5 +1,4 @@
 # bluepy_examples_nRF51822_mbed
-# This is work in progress !!
 
 This rspository contain examples on how to use bluepy to comminicate width the nRF51-DK(nRF51822 Development kit) using mbed<br>
 
