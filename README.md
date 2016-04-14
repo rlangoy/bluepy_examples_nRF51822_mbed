@@ -30,8 +30,9 @@ Downloaing the the bluepy example files
 File information
 ----------------
 blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)<br>
-getDeviceName.py - displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)
-
+getDeviceName.py - displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)<br>
+readButton1.py - displays the button1 value (UUID 0xa001 - Custom Service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
+ 
 
 Using the bluepy examples
 -------------------------
