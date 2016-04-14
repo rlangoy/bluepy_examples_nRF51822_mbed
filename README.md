@@ -53,7 +53,7 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
 
 #####getDeviceName.py
 ---------------------
-Display your BLE [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)by running
+Display your BLE [ Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml) by running
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
    *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
       * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
