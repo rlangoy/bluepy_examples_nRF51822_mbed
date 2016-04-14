@@ -13,7 +13,8 @@ The used templates is:  <br>
 bluepy Installation
 --------------------
 On Raspberry pi3 (or other raspberryes width BLE usb dongle) running the "Raspbian Jessie" image
-* run cat /etc/os-release to display your version :smiley:
+* cat /etc/os-release  
+   * Displays your linux distro and version :smiley:
 
 Install [BlueZ] (http://www.bluez.org)  - The Official Linux Bluetooth protocol stack
 * sudo apt-get install bluez
