@@ -35,7 +35,8 @@ blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (
 Using the bluepy examples
 -------------------------
 Change the dictory to the one width the example files
-* cd bluepy_examples_nRF51822_mbed/
+* cd bluepy_examples_nRF51822_mbed
+
 Start by discover your BLE devices by running
 * sudo python blesca.py
 
