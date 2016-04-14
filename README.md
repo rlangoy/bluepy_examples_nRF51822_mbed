@@ -10,11 +10,11 @@ The used templates is:  <br>
     * Uses an BLE/GATT output characteristic:read-write, boolean. The characteristic is used to control of a single LED.
     
 
-bluepy Installation
---------------------
-On Raspberry pi3 (or other raspberryes width BLE usb dongle) running the "Raspbian Jessie" image
+bluepy Installation on Raspberry pi3 
+------------------------------------
+Other raspberryes or PC's width a BLE usb dongle running the Debian "Jessie" image might work :smiley:<br>
+Check the curent linux distro. 
 * cat /etc/os-release  
-   * Displays your linux distro and version :smiley:
 
 Install [BlueZ] (http://www.bluez.org)  - The Official Linux Bluetooth protocol stack
 * sudo apt-get install bluez
