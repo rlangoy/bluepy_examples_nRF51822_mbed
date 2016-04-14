@@ -9,3 +9,15 @@ The used templates is:  <br>
 * [BLE_LED    Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_LED/?platform=Nordic-nRF51-DK)
     * Uses an BLE/GATT output characteristic:read-write, boolean. The characteristic is used to control of a single LED.
     
+
+bluepy Installation
+--------------------
+On Raspberry pi3 (or other raspberryes width BLE usb dongle) running the "Raspbian Jessie" image
+* run cat /etc/os-release to display your version :smiley:
+
+Install [BlueZ] (http://www.bluez.org) (The Official Linux Bluetooth protocol stack)
+* sudo apt-get install bluez
+
+Install [bluepy] (http://ianharvey.github.io/bluepy-doc) Python interface to Bluetooth LE on Linux
+* sudo apt-get install python-pip libglib2.0-dev
+* sudo pip install bluepy
