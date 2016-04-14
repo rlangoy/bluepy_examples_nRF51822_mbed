@@ -54,7 +54,7 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
 
 #####getDeviceName.py
 ---------------------
-Display your BLE [ Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml) by running
+Display your BLE [ Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml) by running:
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
    *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
       * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
@@ -63,3 +63,12 @@ Display your BLE [ Device Name] (https://developer.bluetooth.org/gatt/characteri
 ```text
 nRF5x
 ```
+#####readButton1.py
+---------------------
+Displays the button1 value (UUID 0xa001 - Custom Service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK) by running:
+* python readButton1.py xx:xx:xx:xx:xx:xx 
+
+The program polls the "Button Service" (UUID 0xa001) every second and displays the "Button1" state:
+* value 0x00 button not pushed
+* value 0x01 button pushed
+
