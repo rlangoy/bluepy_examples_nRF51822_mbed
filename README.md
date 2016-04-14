@@ -22,3 +22,18 @@ Install [BlueZ] (http://www.bluez.org)  - The Official Linux Bluetooth protocol 
 Install [bluepy] (http://ianharvey.github.io/bluepy-doc) - Python interface to Bluetooth LE on Linux
 * sudo apt-get install python-pip libglib2.0-dev
 * sudo pip install bluepy
+
+Downloaing the the bluepy example files
+----------------------------------------
+*  git clone https://github.com/rlangoy/bluepy_examples_nRF51822_mbed.git
+
+File information
+----------------
+blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)
+Using the bluepy examples
+-------------------------
+Change the dictory to the one width the example files
+* cd bluepy_examples_nRF51822_mbed/
+Start by discover your BLE devices by running
+* sudo python blesca.py
+*
