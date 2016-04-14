@@ -39,6 +39,7 @@ Change the dictory to the one width the example files
 * cd bluepy_examples_nRF51822_mbed
 
 #####blesca.py
+--------------
 Start by discover your BLE devices by running
 * sudo python blesca.py
 
@@ -51,6 +52,7 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
 ```
 
 #####getDeviceName.py
+---------------------
 Display your BLE devices name by running
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
    *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
