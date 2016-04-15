@@ -97,6 +97,7 @@ Displays the button1 value (UUID 0xa001 - Custom Service) from the  [BLE_Button 
 The program  displays the "Button1" state: every second by polling the "Button1 characteristics" (UUID 0xa001) value
 * value 0x00 button not pushed
 * value 0x01 button pushed
+
 <br>
 The UUID 0xa001 is a custom characteristics. This means that it is not predefined in the characteristics list from  [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx). In plain english this is youst ouer reference to the button1's state.
 
