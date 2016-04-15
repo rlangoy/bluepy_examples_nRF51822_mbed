@@ -70,7 +70,7 @@ Handle   UUID                                Properties
   0x0E   0000a001-0000-1000-8000-00805f9b34fb NOTIFY READ
 ```
 
-Information about the UUID's could be found at [bluetooth.org] <br> (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx)
+Information about the UUID's could be found at [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx) <br>
 Ie: the first entry width handle 0x03 has the UUID 0x2A00 this is defined as org.bluetooth.characteristic.gap.device_name
 
 #####getDeviceName.py
