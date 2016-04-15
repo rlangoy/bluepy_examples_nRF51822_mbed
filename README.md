@@ -30,6 +30,7 @@ Downloaing the the bluepy example files
 File information
 ----------------
 blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)<br>
+getDeviceCharacteristics.py - Displays the Device's handles,UUIDs and properties
 getDeviceName.py - displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)<br>
 readButton1.py - displays the button1 value (UUID 0xa001 - Custom Service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
  
@@ -52,12 +53,30 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
   Complete Local Name = Button
 ```
 
+#####getDeviceCharacteristics.py
+--------------------------------
+Displays the Device's handles,UUIDs and properties by running :
+* python getDeviceName.py xx:xx:xx:xx:xx:xx 
+   *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
+      * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
+<br> Expected output is:
+```text
+Handle   UUID                                Properties
+-------------------------------------------------------
+  0x03   00002a00-0000-1000-8000-00805f9b34fb READ WRITE
+  0x05   00002a01-0000-1000-8000-00805f9b34fb READ
+  0x07   00002a04-0000-1000-8000-00805f9b34fb READ
+  0x0A   00002a05-0000-1000-8000-00805f9b34fb INDICATE
+  0x0E   0000a001-0000-1000-8000-00805f9b34fb NOTIFY READ
+```
+
+Information about the UUID's could be found at [bluetooth.org] <br> (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx)
+Ie: the first entry width handle 0x03 has the UUID 0x2A00 this is defined as org.bluetooth.characteristic.gap.device_name
+
 #####getDeviceName.py
 ---------------------
 Display your BLE [ Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml) by running:
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
-   *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
-      * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
 
 <br> Expected output is:
 ```text
