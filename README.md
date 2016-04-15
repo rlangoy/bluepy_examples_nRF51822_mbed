@@ -77,7 +77,8 @@ The first entry has the UUID 0x2A00 wich is defined as org.bluetooth.characteris
 ---------------------
 Display your BLE [ Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml) by running:
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
-
+<br>
+The program searches the the UUID 0x2A00  entry, wich is defined as org.bluetooth.characteristic.gap.device_name and displays its content as a string
 <br> Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
 ```text
 nRF5x
