@@ -59,7 +59,8 @@ Displays the Device's handles,UUIDs and properties by running :
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
    *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
       * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
-<br> Expected output is:
+
+<br> Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
 ```text
 Handle   UUID                                Properties
 -------------------------------------------------------
@@ -69,16 +70,15 @@ Handle   UUID                                Properties
   0x0A   00002a05-0000-1000-8000-00805f9b34fb INDICATE
   0x0E   0000a001-0000-1000-8000-00805f9b34fb NOTIFY READ
 ```
-
 Information about the UUID's could be found at [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx) <br>
-Ie: the first entry width handle 0x03 has the UUID 0x2A00 this is defined as org.bluetooth.characteristic.gap.device_name
+The first entry has the UUID 0x2A00 wich is defined as org.bluetooth.characteristic.gap.device_name. The content cound be displayed using getDeviceName.py
 
 #####getDeviceName.py
 ---------------------
 Display your BLE [ Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml) by running:
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
 
-<br> Expected output is:
+<br> Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
 ```text
 nRF5x
 ```
