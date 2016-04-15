@@ -8,5 +8,7 @@ if len(sys.argv) != 2:
 p = Peripheral(sys.argv[1],"random")
 
 chList = p.getCharacteristics()
+print "Handle   UUID                                Properties"
+print "-------------------------------------------------------"                       
 for ch in chList:
-   print ("Handle: 0x"+ format(ch.getHandle(),'02X')  +" "+str(ch.uuid) +" " + ch.propertiesToString())
+   print ("  0x"+ format(ch.getHandle(),'02X')  +"   "+str(ch.uuid) +" " + ch.propertiesToString())
