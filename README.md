@@ -106,7 +106,7 @@ nRF5x
 ```
 #####readButton1.py
 ---------------------
-Displays the button1 value (UUID 0xa001 - Custom Service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK) by running:
+Displays the button1 value (UUID 0xa001 - custom characteristics) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK) by running:
 * python readButton1.py xx:xx:xx:xx:xx:xx 
 
 The program  displays the "Button1" state: every second by polling the "Button1 characteristics" (UUID 0xa001) value
@@ -114,5 +114,7 @@ The program  displays the "Button1" state: every second by polling the "Button1 
 * value 0x01 button pushed
 
 <br>
-The UUID 0xa001 is a custom characteristics. This means that it is not predefined in the characteristics list from  [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx). In plain english this is youst ouer reference to the button1's state.
+*The service-UUID 0xA000 
+   * contains a custom characteristics-UUID 0xA001 .A custom characteristics, means that it is not predefined in the characteristics list from  [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx). 
+      * In plain english characteristics-UUID 0xA001 is the variable that contain the button1's state.
 
