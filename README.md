@@ -30,7 +30,8 @@ Downloaing the the bluepy example files
 File information
 ----------------
 blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)<br>
-getDeviceCharacteristics.py - Displays the Device's handles,UUIDs and properties
+getServices.py - Displays the device's available Services <br>
+getDeviceCharacteristics.py - Displays the device's Characteristics-handles,-UUIDs and properties
 getDeviceName.py - displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)<br>
 readButton1.py - displays the button1 value (UUID 0xa001 - Custom Service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
  
@@ -53,12 +54,23 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
   Complete Local Name = Button
 ```
 
+#####getServices.py.py
+----------------------
+ Displays the device's Characteristics-handles,-UUIDs and properties by running :
+* python getDeviceName.py xx:xx:xx:xx:xx:xx 
+   *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
+      * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
+
+<br> Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
+```text
+Service <uuid=Generic Attribute handleStart=8 handleEnd=11>
+Service <uuid=Generic Access handleStart=1 handleEnd=7>
+Service <uuid=a000 handleStart=12 handleEnd=65535>
+```
 #####getDeviceCharacteristics.py
 --------------------------------
 Displays the Device's handles,characteristic-UUIDs and properties by running :
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
-   *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
-      * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
 
 <br> Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
 ```text
