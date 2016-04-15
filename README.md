@@ -55,7 +55,7 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
 
 #####getDeviceCharacteristics.py
 --------------------------------
-Displays the Device's handles,UUIDs and properties by running :
+Displays the Device's handles,characteristic-UUIDs and properties by running :
 * python getDeviceName.py xx:xx:xx:xx:xx:xx 
    *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
       * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
@@ -70,7 +70,10 @@ Handle   UUID                                Properties
   0x0A   00002a05-0000-1000-8000-00805f9b34fb INDICATE
   0x0E   0000a001-0000-1000-8000-00805f9b34fb NOTIFY READ
 ```
-Information about the UUID's could be found at [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx) <br>
+Information about the characteristic-UUID's could be found at [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx) <br>
+
+The characteristic-UUID is where you could read/write values to update or get information from your BLE-device<br>
+
 The first entry has the UUID 0x2A00 wich is defined as org.bluetooth.characteristic.gap.device_name. The content cound be displayed using getDeviceName.py
 
 #####getDeviceName.py
@@ -91,7 +94,8 @@ nRF5x
 Displays the button1 value (UUID 0xa001 - Custom Service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK) by running:
 * python readButton1.py xx:xx:xx:xx:xx:xx 
 
-The program polls the "Button Service" (UUID 0xa001) every second and displays the "Button1" state:
+The program  displays the "Button1" state: every second by polling the "Button1 characteristics" (UUID 0xa001) value
 * value 0x00 button not pushed
 * value 0x01 button pushed
+The UUID 0xa001 is a custom characteristics. This means that it is not predefined in the characteristics list from  [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx). In plain english this is youst ouer reference to the button1's state.
 
