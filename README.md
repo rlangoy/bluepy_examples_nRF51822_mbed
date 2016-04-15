@@ -31,7 +31,7 @@ File information
 ----------------
 blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)<br>
 getServices.py - Displays the device's available services <br>
-getDeviceCharacteristics.py - Displays the device's characteristics-handles,-UUIDs and properties
+getDeviceCharacteristics.py - Displays the device's characteristics-handles,-UUIDs and properties<br>
 getDeviceName.py - displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)<br>
 readButton1.py - displays the button1 value (UUID 0xa001 - custom service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
  
@@ -67,6 +67,9 @@ Service <uuid=Generic Attribute handleStart=8 handleEnd=11>
 Service <uuid=Generic Access handleStart=1 handleEnd=7>
 Service <uuid=a000 handleStart=12 handleEnd=65535>
 ```
+The Service UUID=0xA000 is a custom service that contain is used to display the nRF51-DK button1's state<br>>
+The button1 could be read by reading the value on the characteristics-UUID 0xA001 (this is a custom characteristics)
+
 #####getDeviceCharacteristics.py
 --------------------------------
 Displays the Device's handles,characteristic-UUIDs and properties by running :
