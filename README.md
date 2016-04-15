@@ -68,7 +68,7 @@ Service <uuid=Generic Access handleStart=1 handleEnd=7>
 Service <uuid=a000 handleStart=12 handleEnd=65535>
 ```
 The Service UUID=0xA000 is a custom service that contain is used to display the nRF51-DK button1's state<br>
-* The button1's state could be obtained by reading the value stored in the characteristics-UUID 0xA001 (this is a custom characteristics)
+* The button1's state could be obtained by reading the value stored in the characteristics-UUID 0xA001<br> (this is a custom characteristics)
 
 #####getDeviceCharacteristics.py
 --------------------------------
