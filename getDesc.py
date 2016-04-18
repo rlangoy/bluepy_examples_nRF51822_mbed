@@ -7,6 +7,9 @@ if len(sys.argv) != 2:
 
 p = Peripheral("f9:ee:30:21:f6:6d","random")
 
-c=p.getDescriptors(1,0x0f)
-for i in c:
-   print i
+descriptors=p.getDescriptors(1,0x00F) #Bug if no limt is specified the function wil hang 
+				      # (go in a endless loop and not return anything)
+print("UUID                                  Handle UUID by name")
+for descriptor in descriptors:
+   print ( " "+ str(descriptor.uuid) + "  0x" + format(descriptor.handle,"02X") +"   "+ str(descriptor) )
+
