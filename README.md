@@ -29,12 +29,12 @@ Downloaing the the bluepy example files
 
 File information
 ----------------
-blesca.py - runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)<br>
+blesca.py - Runs a LE device scan. The file originates form the [bluepy doc's] (http://ianharvey.github.io/bluepy-doc/scanner.html#sample-code)<br>
 getServices.py - Displays the device's available services <br>
 getDeviceCharacteristics.py - Displays the device's characteristics-handles,-UUIDs and properties<br>
-getDeviceName.py - displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)<br>
-readButton1.py - displays the button1 value (UUID 0xa001 - custom service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
- 
+getDeviceName.py - Displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)<br>
+readButton1.py - Displays the button1 value (UUID 0xa001 - custom service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)<br>
+getDesc.py - Displays the device's [discriptors](https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorsHomePage.aspx)<br>
 
 Using the bluepy examples
 -------------------------
@@ -117,4 +117,37 @@ The program  displays the "Button1" state: every second by polling the "Button1 
 *The service-UUID 0xA000 
    * contains a custom characteristics-UUID 0xA001 .A custom characteristics, means that it is not predefined in the characteristics list from  [bluetooth.org] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicsHome.aspx). 
       * In plain english characteristics-UUID 0xA001 is the variable that contain the button1's state.
+
+#####getDesc.py 
+---------------
+Displays the device's [discriptors](https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorsHomePage.aspx) by running:
+* python getDesc.py xx:xx:xx:xx:xx:xx 
+
+Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
+```text
+UUID                                  Handle UUID by name
+ 00002800-0000-1000-8000-00805f9b34fb  0x01   Descriptor <2800>
+ 00002803-0000-1000-8000-00805f9b34fb  0x02   Descriptor <2803>
+ 00002a00-0000-1000-8000-00805f9b34fb  0x03   Descriptor <Device Name>
+ 00002803-0000-1000-8000-00805f9b34fb  0x04   Descriptor <2803>
+ 00002a01-0000-1000-8000-00805f9b34fb  0x05   Descriptor <Appearance>
+ 00002803-0000-1000-8000-00805f9b34fb  0x06   Descriptor <2803>
+ 00002a04-0000-1000-8000-00805f9b34fb  0x07   Descriptor <Peripheral Preferred Connection Parameters>
+ 00002800-0000-1000-8000-00805f9b34fb  0x08   Descriptor <2800>
+ 00002803-0000-1000-8000-00805f9b34fb  0x09   Descriptor <2803>
+ 00002a05-0000-1000-8000-00805f9b34fb  0x0A   Descriptor <Service Changed>
+ 00002902-0000-1000-8000-00805f9b34fb  0x0B   Descriptor <Client Characteristic Configuration>
+ 00002800-0000-1000-8000-00805f9b34fb  0x0C   Descriptor <2800>
+ 00002803-0000-1000-8000-00805f9b34fb  0x0D   Descriptor <2803>
+ 0000a001-0000-1000-8000-00805f9b34fb  0x0E   Descriptor <a001>
+ 00002902-0000-1000-8000-00805f9b34fb  0x0F   Descriptor <Client Characteristic Configuration>
+```
+From the this list we asees that the characteristics whdth UUID=0xA001 (Button1 characteristics) has a Descriptor ("Property setting's") named "Client Characteristic Configuration" (CCC).<br>
+CCC is used to enable/disable Notifications/Indications) more information is found in the following [link] (https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorViewer.aspx?u=org.bluetooth.descriptor.gatt.client_characteristic_configuration.xml) <br>
+Enabling notifications for the Button1 characteristics (UUID=0xA001) is done by setting bit0 (the first bit = 1) in the CCC (Client Characteristic Configuration). The CCC is accessed by witing to the handle (0x0f).
+
+
+
+
+
 
