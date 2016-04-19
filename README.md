@@ -9,6 +9,13 @@ The used templates is:  <br>
 * [BLE_LED    Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_LED/?platform=Nordic-nRF51-DK)
     * Uses an BLE/GATT output characteristic:read-write, boolean. The characteristic is used to control of a single LED.
     
+Requirements
+--------------
+The examples uses the libraries BlueZ and blueyp and was tested width:<br>
+* BlueZ Version: 5.23-2+rpi1
+   *  Installed version could be displayed by running: dpkg --status bluez | grep '^Version:'
+* bluepy Version: 1.0.4
+   * nstalled version could be displayed by running: pip show bluepy 
 
 bluepy Installation on Raspberry pi3 
 ------------------------------------
