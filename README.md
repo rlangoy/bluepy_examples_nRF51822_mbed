@@ -35,6 +35,7 @@ getDeviceCharacteristics.py - Displays the device's characteristics-handles,-UUI
 getDeviceName.py - Displays [gap Device Name] (https://developer.bluetooth.org/gatt/characteristics/Pages/CharacteristicViewer.aspx?u=org.bluetooth.characteristic.gap.device_name.xml)<br>
 readButton1.py - Displays the button1 value (UUID 0xa001 - custom service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)<br>
 getDesc.py - Displays the device's [discriptors](https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorsHomePage.aspx)<br>
+readButton1Notify.py - Same as readButton1.py, but uses Notfication instead of polling the button1 value
 
 Using the bluepy examples
 -------------------------
@@ -145,6 +146,22 @@ UUID                                  Handle UUID by name
 From the this list we asees that the characteristics whdth UUID=0xA001 (Button1 characteristics) has a Descriptor ("Property setting's") named "Client Characteristic Configuration" (CCC).<br>
 CCC is used to enable/disable Notifications/Indications) more information is found in the following [link] (https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorViewer.aspx?u=org.bluetooth.descriptor.gatt.client_characteristic_configuration.xml) <br>
 Enabling notifications for the Button1 characteristics (UUID=0xA001) is done by setting bit0 (the first bit = 1) in the CCC (Client Characteristic Configuration). The CCC is accessed by witing to the handle (0x0f).
+
+#####readButton1Notify.py
+-------------------------
+Displays and enables Nortfication for changes in the button1 value (UUID 0xa001 - custom service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK) by running:
+* python readButton1Notify.py xx:xx:xx:xx:xx:xx 
+<br> 
+<br>
+Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
+```text
+Button1 Client Characteristic Configuration found at handle 0x0F
+Notification is turned on for Button1
+Waiting... Waited more than one sec for notification
+Notification from Handle: 0x0E Value: 1
+Notification from Handle: 0x0E Value: 0
+```
+
 
 
 
