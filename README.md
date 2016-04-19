@@ -13,9 +13,9 @@ Requirements
 --------------
 The examples uses the libraries BlueZ and blueyp and was tested width:<br>
 * BlueZ Version: 5.23-2+rpi1
-   *  Installed version could be displayed by running: dpkg --status bluez | grep '^Version:'
+   * Installed version could be displayed by running: dpkg --status bluez | grep '^Version:'
 * bluepy Version: 1.0.4
-   * nstalled version could be displayed by running: pip show bluepy 
+   * Installed version could be displayed by running: pip show bluepy 
 
 bluepy Installation on Raspberry pi3 
 ------------------------------------
