@@ -43,7 +43,7 @@ getDeviceName.py - Displays [gap Device Name] (https://developer.bluetooth.org/g
 readButton1.py - Displays the button1 value (UUID 0xa001 - custom service) from the  [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)<br>
 getDesc.py - Displays the device's [discriptors](https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorsHomePage.aspx)<br>
 readButton1Notify.py - Same as readButton1.py, but uses Notfication instead of polling the button1 value<br>
-writeLed1.py - Turns the LED2 on/off using the [BLE_LED Example] (https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_LED/?platform=Nordic-nRF51-DK) 
+writeLed2.py - Turns the LED2 on/off using the [BLE_LED Example] (https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_LED/?platform=Nordic-nRF51-DK) 
 
 Using the bluepy examples
 -------------------------
@@ -170,10 +170,10 @@ Notification from Handle: 0x0E Value: 1
 Notification from Handle: 0x0E Value: 0
 ```
 
-#####writeLed1.py
+#####writeLed2.py
 -----------------
 Turns the LED2 on/off using the [BLE_LED Example] (https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_LED/?platform=Nordic-nRF51-DK)  by running:
-* python writeLed1.py xx:xx:xx:xx:xx:xx 
+* python writeLed2.py xx:xx:xx:xx:xx:xx 
 <br> 
 <br>
 Expected output when the nRF51-DK is running the [BLE_LED Example] (https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_LED/?platform=Nordic-nRF51-DK)
