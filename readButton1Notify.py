@@ -1,28 +1,31 @@
 import struct
 import sys
-import bluepy.btle as btle
+from bluepy.btle import UUID, Peripheral,DefaultDelegate
 
-class MyDelegate(btle.DefaultDelegate):
+class MyDelegate(DefaultDelegate):
     #Constructor (run once on startup)  
     def __init__(self, params):
-        btle.DefaultDelegate.__init__(self)
+        DefaultDelegate.__init__(self)
       
     #func is caled on notifications
     def handleNotification(self, cHandle, data):
          print ("Notification from Handle: 0x" + format(cHandle,'02X') + " Value: "+ format(ord(data[0])))
       
 # Initialisation  -------
+button_service_uuid = UUID(0xA000)
+button_char_uuid    = UUID(0xA001)
+
 if len(sys.argv) != 2:
   print "Fatal, must pass device address:", sys.argv[0], "<device address="">"
   quit()
 
-p = btle.Peripheral(sys.argv[1],"random")
+p = Peripheral(sys.argv[1],"random")
 p.setDelegate( MyDelegate(p) )
 
 #Get ButtonService
-ButtonService=p.getServiceByUUID(0xA000)
+ButtonService=p.getServiceByUUID(button_service_uuid)
 # Get The Button-Characteristics
-ButtonC=ButtonService.getCharacteristics(0xA001)[0]
+ButtonC=ButtonService.getCharacteristics(button_char_uuid)[0]
 #Get The handle tf the  Button-Characteristics
 hButtonC=ButtonC.getHandle()
 # Search and get Get The Button-Characteristics "property" (UUID-0x2902 CCC-Client Characteristic Configuration))
