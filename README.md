@@ -31,12 +31,14 @@ Check the curent linux distro.
 * cat /etc/os-release  
 
 Install [BlueZ] (http://www.bluez.org)  - The Official Linux Bluetooth protocol stack
-* sudo apt-get install bluez
-
+```text
+sudo apt-get install bluez
+```
 Install [bluepy] (http://ianharvey.github.io/bluepy-doc) - Python interface to Bluetooth LE on Linux
-* sudo apt-get install python-pip libglib2.0-dev
-* sudo pip install bluepy
-
+```text
+sudo apt-get install python-pip libglib2.0-dev
+sudo pip install bluepy
+```
 Downloaing the the bluepy example files
 ----------------------------------------
 *  git clone https://github.com/rlangoy/bluepy_examples_nRF51822_mbed.git
