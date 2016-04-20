@@ -19,6 +19,13 @@ The examples uses the libraries BlueZ and blueyp and was tested width:<br>
 
 bluepy Installation on Raspberry pi3 
 ------------------------------------
+Bluetooth installation on RPIv3 run:
+```text
+sudo apt-get install --no-install-recommends Bluetooth
+sudo apt-get install pi-bluetooth
+sudo reboot
+```
+
 Other raspberryes or PC's width a BLE usb dongle running the Debian "Jessie" image might work :smiley:<br><br>
 Check the curent linux distro. 
 * cat /etc/os-release  
