@@ -75,7 +75,7 @@ Device f9:ee:30:21:f6:6d (random), RSSI=-31 dB
 #####getServices.py.py
 ----------------------
  Displays the device's Characteristics-handles,-UUIDs and properties by running :
-* python getDeviceName.py xx:xx:xx:xx:xx:xx 
+* python getServices.py xx:xx:xx:xx:xx:xx 
    *   Where the xx:xx:xx:xx:xx:xx is the MAC address that could be found by running the blesca.py 
       * The MAC address for my device is f9:ee:30:21:f6:6d   :smiley: 
 
@@ -91,7 +91,7 @@ The Service UUID=0xA000 is a custom service that contain is used to display the 
 #####getDeviceCharacteristics.py
 --------------------------------
 Displays the Device's handles,characteristic-UUIDs and properties by running :
-* python getDeviceName.py xx:xx:xx:xx:xx:xx 
+* python getDeviceCharacteristics.py xx:xx:xx:xx:xx:xx 
 
 <br> Expected output when the nRF51-DK is running the [BLE_Button Example](https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_Button/?platform=Nordic-nRF51-DK)
 ```text
