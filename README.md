@@ -53,6 +53,7 @@ readButton1.py - Displays the button1 value (UUID 0xa001 - custom service) from 
 getDesc.py - Displays the device's [discriptors](https://developer.bluetooth.org/gatt/descriptors/Pages/DescriptorsHomePage.aspx)<br>
 readButton1Notify.py - Same as readButton1.py, but uses Notfication instead of polling the button1 value<br>
 writeLed2.py - Turns the LED2 on/off using the [BLE_LED Example] (https://developer.mbed.org/teams/Bluetooth-Low-Energy/code/BLE_LED/?platform=Nordic-nRF51-DK) 
+BLE40_bluepy_slides.pdf  - "Bluetooth 4.0 bluepy NRF51x" Slides from en-soc3001 course at www.usn.no  
 
 Using the bluepy examples
 -------------------------
