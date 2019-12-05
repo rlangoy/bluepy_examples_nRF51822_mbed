@@ -1,6 +1,6 @@
 Welcome to Getting Started with Sphinx's documentation!
 =======================================================
-.. automodule:: my_project.writeLed2
+.. automodule:: my_project.notinuse
     :members:
 .. toctree::
    :maxdepth: 2
