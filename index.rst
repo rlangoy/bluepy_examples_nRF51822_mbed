@@ -2,9 +2,8 @@ Welcome to Getting Started with Sphinx's documentation!
 =======================================================
 .. automodule:: notinuse
     :members:
-.. automodule::
-.. autoclass::
-.. autoexception::
+    :undoc-members:
+    :show-inheritance:
 
 .. toctree::
    :maxdepth: 2
