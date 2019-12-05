@@ -1,5 +1,9 @@
 Documentation
 =============
+The ``mmmmm`` class
+*****************************
+.. autoclass:: blesca.ScanDelegate
+
 The ``blesca`` class
 *****************************
 .. autoclass:: blesca.ScanDelegate
