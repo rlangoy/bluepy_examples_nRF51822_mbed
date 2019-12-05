@@ -1,15 +1,26 @@
-Welcome to Getting Started with Sphinx's documentation!
-=======================================================
-.. automodule:: notinuse
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-Indices and tables
-==================
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Documentation
+=============
+The ``blesca`` class
+*****************************
+.. autoclass:: blesca.ScanDelegate
+:members:
+:undoc-members:
+:show-inheritance:
+The ``blesca.ScanDelegate`` class
+*****************************
+.. autoclass:: blesca
+:members:
+:undoc-members:
+:show-inheritance:
+The ``ScanDelegate`` class
+***********************************
+.. autoclass:: ScanDelegate
+:members:
+:undoc-members:
+:show-inheritance:
+The ``Non existing...`` class
+*******************************************
+.. autoclass:: simpleble.SimpleBleNotificationDelegate
+:members:
+:undoc-members:
+:show-inheritance:
