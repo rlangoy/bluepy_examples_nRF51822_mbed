@@ -8,7 +8,7 @@ led_service_uuid = UUID(0xA000)
 led_char_uuid = UUID(0xA001)
 
 if len(sys.argv) != 2:
-  print "Fatal, must pass device address:", sys.argv[0], "<device address="">"
+  print ("Fatal, must pass device address:", sys.argv[0], "<device address="">")
   quit()
 
 p = Peripheral(sys.argv[1], "random")
